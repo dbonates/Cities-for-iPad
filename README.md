@@ -1,5 +1,7 @@
 #Cities App
 
+![alt tag](toutrips_anim_400c.gif)
+
 A framgment of an app I've been working on about places to visit on Brazil. This branch implements
 the City selector if the user does not select any before dive into the application.
 
