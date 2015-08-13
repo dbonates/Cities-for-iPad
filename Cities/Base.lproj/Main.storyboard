@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cities" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovu-bU-9Wx">
+                                <rect key="frame" x="672" y="294" width="352" height="88"/>
+                                <color key="backgroundColor" red="0.21878945827484131" green="0.73876887559890747" blue="0.63984298706054688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="d3X-zs-J6f"/>
+                                    <constraint firstAttribute="width" constant="352" id="lbq-Gi-931"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ok, go!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="okGoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1d1-hr-g86"/>
+                                </connections>
+                            </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDq-TI-Rak">
+                                <rect key="frame" x="352" y="294" width="320" height="180"/>
+                                <color key="backgroundColor" red="0.90369832515716553" green="0.40958982706069946" blue="0.32824045419692993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="ak2-hO-AeZ"/>
+                                    <constraint firstAttribute="height" constant="180" id="eog-oL-zbN"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVb-Fa-dpz">
+                                <rect key="frame" x="672" y="379" width="352" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="HcE-6s-EIh"/>
+                                    <constraint firstAttribute="height" constant="95" id="Wp7-Rf-C5G"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aR0-d2-v3P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, first choose a city:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnk-mz-tel">
+                                <rect key="frame" x="68" y="328" width="254" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="Q7t-B6-XFz"/>
+                                    <constraint firstAttribute="width" constant="254" id="fyM-qq-Ehd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.87941919189999995" green="0.72899153090000002" blue="0.30932823009999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.92105263159999995" green="0.87196751640000003" blue="0.1307565789" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rio-blue" translatesAutoresizingMaskIntoConstraints="NO" id="hBb-KV-px7">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bt_cidades" translatesAutoresizingMaskIntoConstraints="NO" id="RYo-bS-bBt">
+                                <rect key="frame" x="35" y="666" width="61" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bt_mapa" translatesAutoresizingMaskIntoConstraints="NO" id="AkU-UZ-7dt">
+                                <rect key="frame" x="137" y="666" width="61" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bt_ondecomer" translatesAutoresizingMaskIntoConstraints="NO" id="RV3-tj-Upd">
+                                <rect key="frame" x="231" y="666" width="101" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bt_ondedormir" translatesAutoresizingMaskIntoConstraints="NO" id="Hv8-pI-YMH">
+                                <rect key="frame" x="375" y="666" width="107" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to Enter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sI-IO-1II">
+                                <rect key="frame" x="0.0" y="112" width="254" height="111"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.046216890215873718" green="0.41148427128791809" blue="0.50317031145095825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.92105263159999995" green="0.87196751640000003" blue="0.1307565789" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zov-hg-diM">
+                                <rect key="frame" x="-18" y="48" width="254" height="111"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                <color key="textColor" red="0.046216890215873718" green="0.41148427128791809" blue="0.50317031145095825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.92105263159999995" green="0.87196751640000003" blue="0.1307565789" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17724236845970154" green="0.23273941874504089" blue="0.2595706582069397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lVb-Fa-dpz" firstAttribute="top" secondItem="ovu-bU-9Wx" secondAttribute="bottom" constant="-3" id="1z3-hR-IBd"/>
+                            <constraint firstItem="DDq-TI-Rak" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="274" id="3R4-RH-lBq"/>
+                            <constraint firstItem="lVb-Fa-dpz" firstAttribute="leading" secondItem="DDq-TI-Rak" secondAttribute="trailing" id="7AT-y7-VF1"/>
+                            <constraint firstAttribute="trailing" secondItem="ovu-bU-9Wx" secondAttribute="trailing" id="AOH-va-nbW"/>
+                            <constraint firstItem="lVb-Fa-dpz" firstAttribute="leading" secondItem="DDq-TI-Rak" secondAttribute="trailing" id="CLv-mN-ZHf"/>
+                            <constraint firstItem="lnk-mz-tel" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="308" id="D9l-HL-Dvw"/>
+                            <constraint firstItem="ovu-bU-9Wx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="274" id="FO4-aY-NBL"/>
+                            <constraint firstItem="ovu-bU-9Wx" firstAttribute="leading" secondItem="DDq-TI-Rak" secondAttribute="trailing" id="GsS-uT-jBw"/>
+                            <constraint firstAttribute="trailing" secondItem="lVb-Fa-dpz" secondAttribute="trailing" id="LHr-o9-P5Z"/>
+                            <constraint firstItem="DDq-TI-Rak" firstAttribute="leading" secondItem="lnk-mz-tel" secondAttribute="trailing" constant="30" id="RdZ-Jd-ELE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lnk-mz-tel" secondAttribute="bottom" constant="329" id="T7E-Uc-wvn"/>
+                            <constraint firstItem="lnk-mz-tel" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="68" id="TT4-AC-Hi6"/>
+                            <constraint firstItem="lVb-Fa-dpz" firstAttribute="top" secondItem="ovu-bU-9Wx" secondAttribute="bottom" constant="-3" id="Wag-qh-gHY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DDq-TI-Rak" secondAttribute="bottom" constant="294" id="q2X-Q2-6Vi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lVb-Fa-dpz" secondAttribute="bottom" constant="294" id="xX0-1v-8vG"/>
+                            <constraint firstItem="DDq-TI-Rak" firstAttribute="leading" secondItem="lnk-mz-tel" secondAttribute="trailing" constant="30" id="ypR-ei-cA2"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bWP-qN-UV0" appends="YES" id="hpF-89-QJf"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="b1" destination="RYo-bS-bBt" id="TIh-aw-j0a"/>
+                        <outlet property="b2" destination="AkU-UZ-7dt" id="gVA-lU-Svr"/>
+                        <outlet property="b3" destination="RV3-tj-Upd" id="is8-Jc-iIf"/>
+                        <outlet property="b4" destination="Hv8-pI-YMH" id="LVt-Pr-sx7"/>
+                        <outlet property="cancelBtn" destination="lVb-Fa-dpz" id="4hH-NO-Se5"/>
+                        <outlet property="coverView" destination="hBb-KV-px7" id="Jat-jd-Uiq"/>
+                        <outlet property="okBtn" destination="ovu-bU-9Wx" id="ml6-XL-RTb"/>
+                        <outlet property="picker" destination="DDq-TI-Rak" id="Fcv-NK-AEt"/>
+                        <outlet property="tapLabel" destination="5sI-IO-1II" id="Jve-tg-fSW"/>
+                        <outlet property="temperatureLabel" destination="zov-hg-diM" id="gMv-xf-6Mj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bWP-qN-UV0">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="Def-qt-8Pu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bt_cidades" width="57" height="65"/>
+        <image name="bt_mapa" width="38" height="67"/>
+        <image name="bt_ondecomer" width="87" height="63"/>
+        <image name="bt_ondedormir" width="90" height="62"/>
+        <image name="rio-blue" width="1024" height="768"/>
+    </resources>
+</document>
